@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getBaseContext(), "saveData", Toast.LENGTH_SHORT).show();
         WebView mywebView = new WebView(this);
         mywebView.getSettings().setJavaScriptEnabled(true);
-        mywebView.getSettings().setDomStorageEnabled(true);// 打开本地缓存提供JS调用
-        mywebView.getSettings().setAppCacheMaxSize(1024 * 1024 * 8);// 8倍缓存
+        mywebView.getSettings().setDomStorageEnabled(true);// 打开本地缓存提供JS调用,至关重要
+        mywebView.getSettings().setAppCacheMaxSize(1024 * 1024 * 8);// 实现8倍缓存
         mywebView.getSettings().setAllowFileAccess(true);
         mywebView.getSettings().setAppCacheEnabled(true);
         String appCachePath = getApplication().getCacheDir().getAbsolutePath();
