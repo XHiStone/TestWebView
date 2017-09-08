@@ -2,7 +2,7 @@
 H5交互Webview实现localStorage数据存储<br>
 先看看效果图吧<br>
 ![image](https://github.com/18337129968/TestWebView/blob/master/photo/localStorage.gif)<br>
-实现比较简单但是第一次用可能会遇到一些坑<br>
+实现比较简单,但是第一次用可能会遇到一些坑<br>
 ### 首先得有Webview控件：
 有人问我是不是需要写布局文件，不写行不行，现在我就告诉你们，不写没问题，需要写就写不写直接创建New一个也行。
 下面我就介绍一个，我new一个Webview实现localStorage。
@@ -19,7 +19,7 @@ H5交互Webview实现localStorage数据存储<br>
 ```
 上面这些settings是实现localStorage需要的存储条件。
 ### 其次就是如何实现localStorage本地存储了：
-其实我在网上搜索了很多比如这样
+其实我在网上搜索了很多比如这样:
 ```
  String userAgent = "shixinzhang";
  String js = "window.localStorage.setItem('userAgent','" + userAgent + "');";
