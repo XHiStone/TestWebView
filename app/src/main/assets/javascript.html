@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+       function saveData(param){
+          <!--console.log("android调用此方法=====>saveData");-->
+          localStorage.setItem("userAgent",param,true);
+          console.log("android调用此方法=====>getData==="+localStorage.getItem("userAgent"));
+          window.android.getUserKey(localStorage.getItem("userAgent"));
+       }
+    </script>
+</head>
+
+</html>
